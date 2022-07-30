@@ -1,0 +1,33 @@
+SET
+pg_size_pretty
+2352 kB
+(1 row)
+pg_size_pretty
+1160 kB
+(1 row)
+tbl_size|idx_size|total_size
+1192 kB|1160 kB|2352 kB
+(1 row)
+UPDATE 10000
+tbl_size|idx_size|total_size
+2344 kB|2232 kB|4576 kB
+(1 row)
+VACUUM
+pg_size_pretty
+4584 kB
+(1 row)
+COPY 1000
+total_size
+2352 kB
+(1 row)
+VACUUM
+total_size
+1272 kB
+(1 row)
+DELETE 2418
+pg_size_pretty
+2280 kB
+(1 row)
+TRUNCATE TABLE
+COPY 10000
+COPY 1000
